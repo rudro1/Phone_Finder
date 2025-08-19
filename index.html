@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Phone Finder</title>
+</head>
+<body>
+    
+<header  class="flex flex-col items-center justify-center   ">
+
+<div class="header_part bg-[#0D6EFD0D] w-full flex flex-col items-center justify-center gap-y-5 pb-10  ">
+
+<div class="md:navbar  pb-10 md:pb-30 pt-5 ">
+  <div class="md:flex-1 pb-2">
+    <a class="btn btn-ghost text-xl text-center md:text-left" href="index.html">PHONE_FINDER</a>
+  </div>
+  <div class="flex flex-col md:flex-row gap-2">
+    <label  for="" class="input w-full md:w-[300px]  rounded-xl ">
+    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <circle cx="11" cy="11" r="8"></circle>
+      <path d="m21 21-4.3-4.3"></path>
+    </g>
+  </svg>
+    <input id="searchinput" type="text" placeholder="Find Your Phone" class="" />
+</label>
+
+<button onclick="searchsengine()" class="btn text-[#fff] text-xl md:text-md bg-[#0D6EFD] py-5 px-5 btn-lg sm:btn-md md:btn-md lg:btn-md xl:btn-md">Search
+
+  
+</button>
+<span id="spinner" class="hidden loading loading-spinner text-secondary"></span>
+    <!-- <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button"   class="btn   py-5 bg-[#0D6EFD] text-[#fff] ">
+        <button   class="btn">
+            Search
+        </button>
+      </div> -->
+    
+    </div>
+  </div>
+
+
+<div class="text-4xl md:text-6xl text-bold capitalize text-center ">Apple Iphone 13 Pro Max</div>
+<div class="md:text-2xl text-[#010203CC] text-center">There are many variations of passages of Lorem Ipsum available, <br>
+    but the majority have suffered alteration in some form, by injected humou.</div>
+
+    <button  class="btn text-[#fff] text-xl md:text-md bg-[#0D6EFD] py-5 px-10 btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg"  ><a href="index.html">Buy Now</a></button>
+    
+
+
+</div>
+</div>
+
+<div  id="iphone_img" class="  top-0 bottom-0">
+
+        <img src="images/icons/Group 48095420 (1).png" alt="">
+    </div>
+</header>
+
+ 
+
+
+<main class="container mx-auto">
+
+
+<div role="alert" id="alert" class="hidden alert alert-error text-center">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+  <span class="capitalize text-center block">please use right keywords.</span>
+</div>
+
+
+<!-- <div class="searchengine">
+
+    <div class="searchbtn_input">
+
+
+    </div>
+</div> -->
+<div id="phone_container" class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
+
+
+
+</div>
+
+      <div class="showall mb-20 flex justify-center md:justify-end mt-10 ">
+
+        <button id="showall" onclick="showall()" class="btn hidden bg-sm text-xl md:text-sm bg-red-600 text-[#fff] px-20">Show All</button>
+      </div>
+
+
+</main>
+
+<footer class="bg-[#0D6EFD0D]">
+
+<div class="mainfooter mt-10 flex flex-col  ">
+
+<div class="footer_part1  flex  flex-col md:flex-row md:justify-around pb-5 pt-5" >
+<div class="text-center pb-5">
+    <div class="text-2xl text-bold ">Hot Gadgets</div>
+    <div class="text-lg ">You can definitely work.</div>
+</div>
+<div class="flex flex-col md:flex-row gap-y-5 md:gap-x-5">
+
+    <div class="socail grid grid-cols-1 md:grid-cols-3 gap-2 justify-items-center">
+<a class=""><img src="images/icons/Facebook.svg" alt=""></a>
+<a class=""><img src="images/icons/Twitter.svg" alt=""></a>
+<a class=""><img src="images/icons/Instagram.png" alt=""></a>
+
+    </div>
+
+    <button class="btn bg-[#0D6EFD] text-[#fff] text-xl md:text-md py-5 btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg"><a href="https://www.linkedin.com/in/bisal-saha-6150631b5/" target="_blank" rel="noopener noreferrer">Join Premium</a></button>
+    
+   
+</div>
+
+
+
+</div>
+
+
+  
+<div class="footer_part2 relative grid grid-cols-2 md:grid-cols-4 gap-10  md:justify-items-center justify-items-center-safe  pt-5">
+<div class="absolute  top-0 w-[100%] flex justify-center pb-3">
+     <hr  class="border-1 border-[#0102030D] w-[75%]">
+</div>
+<div>
+ 
+    <ul class="">
+        <li class="pb-1 text-md text-[#000000]"><a href="">Product</a> </li>
+        <li class="pb-1 text-md text-[#000000]"><a href="">Browse jobs</a></li> 
+         <li class="pb-1 text-md text-[#000000]"><a href="">Remote jobs</a></li>
+        <li class="pb-1 text-md text-[#000000]"><a href="">Startup jobs</a></li>
+       <li class="pb-1 text-md text-[#000000]"><a href="">Company jobs</a></li>
+       
+    </ul>
+</div>
+
+<div>
+    <ul>
+<li class="pb-1 text-md text-[#000000]"><a href="">Popular</a></li>
+<li class="pb-1 text-md text-[#000000]"><a href="">UIUX Design</a></li> 
+<li class="pb-1 text-md text-[#000000]"><a href="">Product Design</a></li>
+ <li class="pb-1 text-md text-[#000000]"> <a href="">Back-End Developer</a></li>
+<li class="pb-1 text-md text-[#000000]"><a href="">Front-End Developer</a></li>
+        
+    </ul>
+</div>
+
+<div>
+    <ul>
+        <li class="pb-1 text-md text-[#000000]"> <a href="">Resource</a></li>
+        <li class="pb-1 text-md text-[#000000]"><a href="">Faq</a></li> 
+        <li class="pb-1 text-md text-[#000000]"><a href="">Support</a></li>
+        <li class="pb-1 text-md text-[#000000]"> <a href="">Privacy Policy</a></li>
+       <li class="pb-1 text-md text-[#000000]"><a href="">Terms of Service</a></li>
+        
+    </ul>
+</div>
+
+
+<div>
+    <ul>
+        <li class="pb-1 text-md text-[#000000]"><a href="">Company</a></li>
+           <li class="pb-1 text-md text-[#000000]"><a href="">About Us</a></li>
+           <li class="pb-1 text-md text-[#000000]"><a href="">Contact Us</a></li>
+           <li class="pb-1 text-md text-[#000000]"><a href="">Career Tips</a></li>  
+           <li class="pb-1 text-md text-[#000000]"><a href="">Careers</a></li> 
+        
+    </ul>
+</div>
+
+    
+</div>
+
+
+
+</div>
+
+</footer>
+
+
+
+<div id="modal">
+
+  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+
+  </dialog>
+</div>
+
+
+
+<!-- modal view -->
+<!-- Open the modal using ID.showModal() method -->
+
+
+    <script src="script/main.js"></script>
+</body>
+</html>
